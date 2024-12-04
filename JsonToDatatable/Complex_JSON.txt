@@ -1,0 +1,36 @@
+{
+  "company": {
+    "name": "TechCorp",
+    "location": "New York",
+    "employees": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "department": {
+          "name": "HR",
+          "location": "Building 1"
+        },
+        "projects": [
+          {
+            "projectId": 101,
+            "projectName": "Automation"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "department": {
+          "name": "IT",
+          "location": "Building 2"
+        },
+        "projects": [
+          {
+            "projectId": 102,
+            "projectName": "Cloud Migration"
+          }
+        ]
+      }
+    ]
+  }
+}
