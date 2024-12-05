@@ -1,6 +1,6 @@
 # Get Current DateTime with Timezone and AM/PM
 
-## 3. Get Current DateTime as String with Timezone
+## 1. Get Current DateTime as String with Timezone
 
 To get the current DateTime with the timezone information, use the `K` format specifier. This will include the timezone offset.
 
@@ -14,7 +14,7 @@ Datetime.Now.ToString("dd/MM/yyyy hh:mm:ss K")
 ```
 In this example, the `+05:30` represents the timezone offset (e.g., India Standard Time).
 
-## Get Current DateTime with AM/PM
+## 2. Get Current DateTime with AM/PM
 
 To get the current DateTime with the AM/PM indicator, use the `tt` format specifier. This will append either `AM` or `PM` based on the time.
 
