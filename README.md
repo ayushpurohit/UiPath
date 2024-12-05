@@ -13,11 +13,9 @@ Whether you are a beginner or an experienced UiPath developer, this repository p
 - **Reusable Code Snippets**: Access a growing library of reusable workflows, components, and code snippets for various use cases.
 
 - **Popular Scenarios**: Explore code examples and templates for solving popular automation scenarios, such as:
-  - File handling (e.g., reading and writing files)
-  - Web scraping and automation
   - Data manipulation (e.g., working with DataTables, Excel files)
   - Orchestrator integration
-  - Error handling and logging
+  - Document Understanding
   
 - **Best Practices**: Learn and adopt industry-standard practices for developing scalable, maintainable, and efficient automation workflows in UiPath.
 
