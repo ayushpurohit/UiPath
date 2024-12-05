@@ -19,7 +19,7 @@ If the `current date` and time are `4th December 2024, 02:30:45`, the `currentDa
 `04/12/2024 02:30:45`
 
 
-### Get Current Date and Time as DateTime Variable
+## 2. Get Current Date and Time as DateTime Variable
 To store the current date and time as a `DateTime` variable, simply use:
 
 ### Assign Activity:
@@ -33,7 +33,7 @@ currentDateTime = Now
 If the current date and time are `4th December 2024, 02:30:45 PM`, the `currentDateTime` will hold the DateTime value:
 `12/4/2024 2:30:45 PM`
 
-### Complete Steps:
+## Complete Steps:
 ### Assign Activity for String Format:
 - **To**: `currentDateString`
 - **Value**: `Now.ToString("dd/MM/yyyy hh:mm:ss")`
