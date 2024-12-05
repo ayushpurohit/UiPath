@@ -11,8 +11,7 @@ To get the current date and time in the format `"dd/MM/yyyy hh:mm:ss"`, use the 
 - **Value**: `Now.ToString("dd/MM/yyyy hh:mm:ss")`
 
 ### Example:
-```
-currentDateString = Now.ToString("dd/MM/yyyy hh:mm:ss")
+```currentDateString = Now.ToString("dd/MM/yyyy hh:mm:ss")
 
 If the `current date` and time are `4th December 2024, 02:30:45`, the `currentDateString` will have the value:
 `04/12/2024 02:30:45`
