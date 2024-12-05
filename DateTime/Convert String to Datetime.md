@@ -1,6 +1,14 @@
+
 # Convert a String to DateTime in UiPath
 
 In UiPath, you can convert a string to a `DateTime` object using several methods. Below are the methods you can use along with examples.
+
+
+## Explanation:
+- **`Convert.ToDateTime`**: This method is simple but can be prone to errors if the format of the input string is not recognized by the system.
+- **`DateTime.Parse`**: Automatically recognizes various date formats but requires the input string to be in a recognizable format.
+- **`DateTime.ParseExact`**: The most reliable method when you know the exact format of the input string. It ensures that the string is parsed exactly as expected.
+
 
 ### 1. Convert using `Convert.ToDateTime` Method
 
@@ -67,10 +75,3 @@ var_datetime = DateTime.ParseExact(Strinput.ToString, "dd/MM/yyyy hh:mm:ss K").T
 
 This will return the ```DateTime``` in the format specified or the default format based on your machine's culture settings.
 
-
-### Explanation:
-- **`Convert.ToDateTime`**: This method is simple but can be prone to errors if the format of the input string is not recognized by the system.
-- **`DateTime.Parse`**: Automatically recognizes various date formats but requires the input string to be in a recognizable format.
-- **`DateTime.ParseExact`**: The most reliable method when you know the exact format of the input string. It ensures that the string is parsed exactly as expected.
-
-This markdown provides detailed examples and explanations for converting a string into `DateTime` in UiPath using different methods, depending on the format of the input string.
