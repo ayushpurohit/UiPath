@@ -1,4 +1,4 @@
-# Working with DataTables in .NET (C#/VB)
+# Working with DataTables in UiPath
 
 Below are common operations to interact with a `DataTable` (`dt`) in .NET, along with examples:
 
