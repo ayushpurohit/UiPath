@@ -28,10 +28,69 @@ int columnCount = dt.Columns.Count
 
 ### Output
 - **Type**: Int32
-- **Example Usage in UiPath*:
+- **Example Usage in UiPath**:
 
 ```
 columnCount = dt.Columns.Count
 ```
 `columnCount` will hold the total number of columns.
 
+## 3. Get the Index of a Specific Row (Inside a For Each Row Loop)
+To get the index of the current row inside a For Each Row loop:
+```
+dt.Rows.IndexOf(CurrentRow)
+```
+
+### Output
+- **Type**: `Int32`
+- **Example Usage in UiPath**:
+
+- Inside a `For Each Row` activity:
+  - Assign activity:
+```
+rowIndex = dt.Rows.IndexOf(CurrentRow)
+```
+
+`rowIndex` will contain the zero-based index of the current row.
+
+## 4. Get the Index of a Specific Column (By Column Name)
+
+To get the index of a column when the column name is known:
+```
+dt.Columns.IndexOf("ColumnName")
+```
+
+To get the index of a column by its position:
+```
+dt.Columns.IndexOf(ColumnIndex)
+```
+
+- **Type**: - `Int32`
+- **Example Usage in UiPath**:
+  - Assign activity:
+```
+columnIndex = dt.Columns.IndexOf("ColumnName")
+```
+
+`columnIndex` will hold the zero-based index of the column with the name `"ColumnName"`.
+
+
+## 5. Get Column Name from Index
+
+To get the column name by its index:
+
+```
+Str_ColumnName = dt.Columns(Int_ColumnIndex).ColumnName.ToString
+```
+
+### Example Usage:
+- Assign activity:
+```
+Str_ColumnName = dt.Columns(2).ColumnName.ToString
+```
+If column index `2` corresponds to a column named `"Age"`, `Str_ColumnName` will hold `"Age"`.
+
+### Notes:
+- `Count` starts from `1`, representing the total count of rows/columns.
+- `Index` starts from `0`, representing the zero-based position of rows/columns.
+- Ensure the `DataTable` is initialized before performing these operations to avoid errors.
